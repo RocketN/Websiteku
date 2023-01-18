@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I'M STRESS pls help me</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <nav>
+		<div class="wrapper">
+			<div class="logo"><a href="index.html">websiteku</a></div>
+			<div class="menu">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="guide.html">GUIDE</a></li>
+					<li><a href="Characters.html">CHARACTERS</a></li>
+					<li><a href="artifacts.html">ARTIFACTS</a></li>
+					<li><a href="halaman1.html">ABOUT</a></li>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+					<!--
+					<li><a href="login.html" class="tbl-biru">Sign Up</a></li>
+
+					<li><link rel="stylesheet" type="text/css" class="tbl-biru" href="https://account.hoyoverse.com/?lang=en#/login?cb_route=%2Faccount%2FaccountInfo">
+					Sign Up</a> 
+				-->
+				</ul>
+			</div>	
+		</div>
+	</nav>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <p>Already have Account? click <a href="login.html" style="color:dodgerblue"> Here! </a></p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+		<!-- Home -->
+		<section id="home">
+			<img src="img/banner.jpg" width="120%" height="100%">
+			<div class="kolom">
+				<p class="deskripsi">Genshin impact</p>
+				<h2>Step Into a Vast Magical World of Adventure</h2>
+				<p style="color:white;">
+					Genshin Impact is a free-to-play open-world action RPG developed by Hoyoverse, a video game developer based in Shanghai, China. The game brings players to the visually stunning world of Teyvat.
+				</p>
+				<p><a href="halaman1.html" class="tbl-pink"> pelajari lebih lanjut </a></p>
+			</div>
+		</section>
+		<!-- NEWS -->
+				<section id="courses">
+					<div class="kolom">
+				<h2>NEWS!</h2>
+				<p><a href="Animasi Stop Motion Anniversary 2 Tahun Genshin Impact — Harta Karun Sepanjang Perjalanan.html">- Animasi Stop Motion Anniversary 2 Tahun Genshin Impact — Harta Karun Sepanjang Perjalanan</p>
+				<p><a href="Video Pendek Kumpulan Pemandangan Genshin Impact Mondstadt.html">- Video Pendek Kumpulan Pemandangan Genshin Impact: Mondstadt</p>
+				<p><a href="Mini Album Siluet Kitsune yang Mengelana.html">- Mini Album: Siluet Kitsune yang Mengelana</p>
+				<p><a href="Teaser Kostum Fashion Teyvat — Bunga di Antara Halaman  Genshin Impact.html">- Teaser Kostum: Fashion Teyvat — Bunga di Antara Halaman | Genshin Impact</p>
+			<!--	<p><a href="" class="tbl-biru"> Pelajari lebih lanjut </a></p> -->
+			</div>
+			
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="img/1.1.jpg" style="width:100%">
+<!--  <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="img/1.2.jpg" style="width:100%">
+<!--  <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="img/1.3.jpg" style="width:100%">
+<!--  <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="img/1.4.jpg" style="width:100%">
+<!--  <div class="text">Caption Text</div> -->
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+			
+			
+		</section>
+
+		<!-- Tutor -->
+		<section id="tutors">
+			<div class="tengah">
+				<div class="kolom">
+					<p class="deskripsi">Top Playable Characters</p>
+					<h2>Characters</h2>
+					<p style="color: white;">A player character (also known as a playable character or PC) is a fictional character in a video game or tabletop role-playing game whose actions are controlled by a player rather than the rules of the game.</p>
+				</div>
+				<div class="tutors-list">
+					<div class="kartu-tutors">
+						<a href="profil1.html"><img src="img/shougun_052.webp"></a>
+						<p>Raiden Shogun</p>
+					</div>
+					<div class="kartu-tutors">
+						<a href="profil1.html"><img src="img/eula_051.webp"></a>
+						<p>Eula Lawrence</p>
+					</div>
+					<div class="kartu-tutors">
+						<a href="profil1.html"><img src="img/hutao_046.webp"></a>
+						<p>Hu Tao</p>
+					</div>
+					<div class="kartu-tutors">
+						<a href="profil1.html"><img src="img/yelan_060.webp"></a>
+						<p>yelan</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Partner -->
+		<section id="partners">
+			<div class="tengah">
+				<div class="kolom">
+					<p class="deskripsi">Top Unplayable Characters or NPC</p>
+					<h2>Characters</h2>
+					<p style="color:white;">Non-Player Characters (NPCs) are characters which that cannot be controlled by the player, including, but not limited to unobtained playable characters.</p>
+				</div>
+				<div class="partner-list">
+					<div class="kartu-partner">
+						<img src="img/katheryne.png">
+						<p style="color:white;">Katheryne</p>
+					</div>
+					<div class="kartu-partner">
+						<img src="img/NPC_Liben.webp">
+						<p style="color:white;">Liben</p>
+					</div>
+					<div class="kartu-partner">
+						<img src="img/NPC_Madame_Ping.webp">
+						<p style="color:white;">Madame Ping</p>
+					</div>
+					<div class="kartu-partner">
+						<img src="img/NPC_Timmie.webp">
+						<p style="color:white;">Timmie</p>
+					</div>
+					<div class="kartu-partner">
+						<img src="img/NPC_Kazari.webp">
+						<p style="color:white;">Kazari/Hanachirusato</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+		
+	<div id="contact">
+		<div class="wrapper">
+			<div class="footer">
+				<div class="footer-section">
+					<h3>Websiteku</h3>
+					<p>Lorem ipsum dolor sit amet consectur.</p>
+				</div>
+				<div class="footer-section">
+					<h3>About</h3>
+					<p>Lorem ipsum dolor sit amet consectur.</p>
+				</div>
+				<div class="footer-section">
+					<h3>Contact</h3>
+					<p>Jl. Laksda Adisucipto Sleman Yogyakarta</p>
+					<p>Kode Pos: 57365</p>
+				</div>
+				<div class="footer-section">
+					<h3>Social</h3>
+					<p><b>Instagram:</b> </p>
+					<p><b>Facebook:</b> </p>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div id="copyright">
+			<div class="wrapper" style="color:white;">
+					&copy; 2022. <b>Websiteku</b> All Rights Reserved.
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
